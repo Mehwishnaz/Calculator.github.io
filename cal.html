@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title> Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input type="text" name="displayResult" placeholder="0" id="demo" /></div>
+            <div class="button">
+                <div class="row">
+                    <input type="button" name="addb" value="+" onclick="calFunction(addb.value)"/>
+                    <input type="button" name="mulb" value="*" onclick="calFunction(mulb.value)"/>
+                    <input type="button" name="divb" value="/" onclick="calFunction(divb.value)"/>
+                    <input type="button" name="subb" value="-" onclick="calFunction(subb.value)"/>
+                </div>
+                <div>
+                    <input value="1" name="b1" type="button" onclick="calFunction(b1.value)" />
+                    <input value="2" name="b2" type="button" onclick="calFunction(b2.value)" />
+                    <input value="3" name="b3" type="button" onclick="calFunction(b3.value)" />
+                    <input value="4" name="b4" type="button" onclick="calFunction(b4.value)" />
+                </div>
+                <div>
+                    <input value="5" name="b5" type="button" onclick="calFunction(b5.value)" />
+                    <input value="6" name="b6" type="button" onclick="calFunction(b6.value)" />
+                    <input value="7" name="b7" type="button" onclick="calFunction(b7.value)" />
+                    <input value="8" name="b8" type="button" onclick="calFunction(b8.value)" /> </div>
+                <div>
+                    <div>
+                        <input value="9" name="b9" type="button" onclick="calFunction(b9.value)" />
+                        <input value="0" name="b0" type="button" onclick="calFunction(b0.value)" />
+                        <input value="." name="bd" type="button" onclick="calFunction(bd.value)" />
+                        <input value="%" name="bm" type="button" onclick="calFunction(bm.value)" />
+                    </div>
+                    <div>
+                        <input class="grey" value="=" type="button"
+                            onclick="displayResult.value=eval(displayResult.value)" />
+                        <input class="clb" value="C" type="reset"  />
+                        <input type="button" value="x&#xb2;"  name="pb" onclick="rootFunction()"/>
+                        <input type="button" value="&radic;"  id="rb" onclick="sqrFunction()"/>
+
+                    </div>
+                </div>
+
+        </form>
+    </div>
+
+    <script>
+        function calFunction(result) {
+            form.displayResult.value = form.displayResult.value + result;
+        }
+        function rootFunction(result) {
+          var  x = form.displayResult.value ;
+          var a = (x * x);
+          var res = a ;
+          form.displayResult.value = res;
+           }
+          function sqrFunction(result) {
+            var  x = form.displayResult.value ;
+            var a = Math.sqrt(x);
+            var res = a ;
+        form.displayResult.value = res;           }
+    </script>
+
+</body>
+<a href="https://www.facebook.com">&#8592;</a>
+
+</html>
