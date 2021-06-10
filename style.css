@@ -86,3 +86,16 @@ input[type=text] {
 	color: #ffffff !important;
 	
 }
+ /* @media screen and (max-width: 800px) */
+/* { */
+/* .container */
+/* { */
+/* float: none; */
+/* width: 100%; */
+/* display: flex; */
+/* flex-direction: column-reverse; */
+/* } */
+/* .display{ */
+	/* height: 100px; */
+/* } */
+/* } */
